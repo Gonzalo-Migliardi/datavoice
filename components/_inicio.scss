@@ -1,0 +1,37 @@
+.titulo{
+    @include cardContainer(center, 'yes'); 
+  }
+  
+  .titulo__subtitulo{
+    color: blue;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+    
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .titulo__parrafo{
+    color: white;
+    background-color: black;
+    font-weight: 300;
+  
+    display: grid;
+    gap: 2ren;
+  }
+  
+  .titulo__subtitulo2{
+    color: blue;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+    
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .titulo__parrafo2{
+    color: #F73100;
+    background-color: aqua;
+  }

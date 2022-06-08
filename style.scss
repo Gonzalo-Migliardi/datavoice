@@ -1,0 +1,126 @@
+@import "./components/variables";
+@import "./components/global";
+@import "./components/servicios";
+@import "./components/inicio";
+@import "./components/footer";
+  
+   .background{
+    background-image: url(../imagenes/pexels-pixabay-257736.jpg);
+    background-size: cover;
+    background-position: center; 
+  }
+  
+  .header{
+    background-color: white;
+    border-bottom: solid 5px red;
+    position: static;
+  }
+    
+  li{
+    display: inline;
+    margin: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .navegador{
+    border: 2px solid #555;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: right;
+    background: yellow;
+  
+  }
+  
+  h2{
+    text-decoration: underline;
+  }
+  .background__sobre-nosotros{
+    background-color: rgb(185, 185, 185);
+  }
+  .background__servicios{
+    background-color: rgb(121, 121, 197);
+  }
+  
+  .background__equipo-de-trabajo{
+    background-color: #edf79e;
+  }
+  .background__contacto{
+    background-color: rgb(65, 65, 65);
+  }
+  
+  .formulario{
+    background-color: black;
+    border-radius: 10px;
+    width: 500px;
+    height: 360px;
+    padding: 16px;
+    border: 5px solid yellow;
+    margin: 32px;
+    margin: 0 auto;
+    color: white;
+  }
+  .header__icono{
+    display: none;
+  }
+
+  .nav__item--oculto{
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .background {
+        background-image: none;
+        background-color: yellowgreen;
+    }
+    
+    .background__sobre-nosotros {
+        background-color: pink;
+    }
+    
+    /*.navegador {
+      display: none;
+   }*/
+   .header__icono{
+    display: contents;
+    font-size: 32px;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 2%;
+    left: 95%;
+  }
+  #sidebar{
+    background-color: #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-width: 350px;
+
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+
+  #sidebar .navegador__lista{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1rem;
+  }
+.nav__item--oculto{
+  display: block;
+}
+  #sidebar:target {
+    /*display: block;*/
+    transform: translatex(0);
+  }
+  }
