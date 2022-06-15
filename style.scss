@@ -43,6 +43,9 @@
   .background__sobre-nosotros{
     background-color: rgb(185, 185, 185);
   }
+  .sobre-nosotros__texto{
+    display: grid;
+  }
   .background__servicios{
     background-color: rgb(121, 121, 197);
   }
@@ -53,7 +56,13 @@
   .background__contacto{
     background-color: rgb(65, 65, 65);
   }
-  
+  .rewards__items{
+    display: flex;
+    align-items: center;
+  }
+  .rewards__iconos{
+    font-size: 20px;
+  }
   .formulario{
     background-color: black;
     border-radius: 10px;
